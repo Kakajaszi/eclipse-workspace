@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Sumowanie
+{
+		public static void main(String[] args)
+		{
+			Scanner scanner = new Scanner (System.in) ;
+			int number;
+			double suma=0;
+			double sr=0;
+			double i =0;
+			int max= Integer.MIN_VALUE;
+			int min= Integer.MAX_VALUE;
+			do
+			{
+				System.out.print("Podaj liczbe: ");
+				number = scanner.nextInt();
+				suma=suma+number;
+				System.out.print("Suma wynosi: "+suma);
+				i++;
+				if( (number>max)  && (number !=0) )
+				{
+					max = number;
+				}
+				if( (number<min) && (number !=0 ) )
+				{
+					min=number;
+				}
+				sr = suma/i;
+				System.out.println();
+				System.out.println("Srednia wynosci:"+sr);
+				System.out.println();
+			} while(number !=0);
+			System.out.print("Suma wynosi: "+suma);
+			System.out.println("Srednia wynosci:"+sr);
+			System.out.println("Wartosc najwieksza:"+max);
+			scanner.close();
+		}
+
+	}

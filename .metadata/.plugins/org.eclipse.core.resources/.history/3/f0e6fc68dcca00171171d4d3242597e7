@@ -1,0 +1,20 @@
+
+public class pierwiastki {
+
+	public static void main(String[] args) {
+		int mnoznik=1;
+		double suma=2;
+		System.out.println((int)suma);
+		for(int i =2;i <11;i++)
+		{	
+			suma=suma+i/Math.sqrt(i+1);
+			System.out.print(i+", ");
+		}
+		System.out.println("");
+		System.out.println(suma);
+
+	}
+
+
+
+}

@@ -1,0 +1,19 @@
+
+public class Sumaodwrotnosci2 {
+
+	public static void main(String[] args) {
+	int mnoznik=1;
+		double suma=0;
+		for(int i=1; i<11 ; i++)
+		{
+			suma=suma+1.0/i;
+			System.out.print(i+", ");
+			System.out.print(i+"("+mnoznik+ "), ");
+			mnoznik=mnoznik*(-1);
+		}
+System.out.println("");
+System.out.println(suma);
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Sumowanie
+{
+		public static void main(String[] args)
+		{
+			Scanner scanner = new Scanner (System.in) ;
+			int number;
+			double suma=0;
+			do
+			{
+				System.out.print("Podaj liczbe: ");
+				number = scanner.nextInt();
+				suma=suma+number;
+				System.out.print("Suma wynosi: "+suma);
+			} while(number !=0);
+			System.out.print("Suma wynosi: "+suma);
+			scanner.close();
+		}
+
+	}

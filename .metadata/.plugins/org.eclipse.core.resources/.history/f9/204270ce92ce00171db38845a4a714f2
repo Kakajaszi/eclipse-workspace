@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Sumowanie
+{
+		public static void main(String[] args)
+		{
+			Scanner scanner = new Scanner (System.in) ;
+			int number;
+			double suma=0;
+			double sr=0;
+			double i =0;
+			do
+			{
+				System.out.print("Podaj liczbe: ");
+				number = scanner.nextInt();
+				suma=suma+number;
+				System.out.print("Suma wynosi: "+suma);
+				i++;
+				sr = suma/i;
+				System.out.println();
+				System.out.println("Srednia wynosci:"+sr);
+				System.out.println();
+			} while(number !=0);
+			System.out.print("Suma wynosi: "+suma);
+			System.out.println("Srednia wynosci:"+sr);
+			scanner.close();
+		}
+
+	}
